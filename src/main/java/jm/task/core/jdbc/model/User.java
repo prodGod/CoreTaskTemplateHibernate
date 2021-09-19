@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "mysql_hiber.users")
 public class User {
-    @Id @GeneratedValue
+    @Id @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column (name = "id")
     private Long id;
 
